@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#logo img{
+    filter: invert(1);
+    height: 36px;
+} 
+#navbar{
+    background-color: black;
+    opacity: 0.9;
+    padding: 20px 15px;
+    
+}
+#navbar li a {
+    text-decoration: none;
+    padding: 20px 40px ;
+    color: white;
+    
+}
+#navbar li{
+    list-style: none;
+    
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* #intro::before{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    content: '';
+    background: url("/static/Dance\ 1.jpg");
+    position: absolute;
+    top:0;
+} */
+
+#intro{
+   height: 300px;
+   background-color: red;
+   background: center / cover  no-repeat url("/static/img/dap.jpg");
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-bottom: 86px;  
+}
+#intro div{
+    position: relative;
+    bottom: 63px;
+}
+#sponser{
+    height: 300px;
+    background-color: #372828;
+    color: white;
+}
+#sponser h2{
+    text-align: center;
+    padding-top: 12px;
+}
+.sponsers{
+    height: 120px;
+    max-width:987px;
+    margin: auto;
+}
+.sponsers img{
+    margin: 66px 27px;
+    height: 87px;
+    position: relative;
+    left: -32px;
+}
+
+#dal{
+    height: 292px;
+    position: relative;
+    left: 926px;
+    bottom: 162px;
+    filter: invert(1);
+}
+#intro .div {
+    padding: 2px 16px;
+}
+#divbig{
+    font-size: 2rem;
+}
+#divsmall{
+    font-size: 1.2rem;
+    
+}
+#navbar li a:hover{
+    color: red;
+    cursor: pointer;
+    
+}
+#missions{
+    height: 300px;
+    display: block;
+    background-color: white;
+    color: black;
+    margin: auto;
+    width: 87%;
+    
+}
+.card-box{
+    display:flex ;
+    justify-content: space-between;
+    align-items:center ;
+}
+.card-img{
+    margin: auto auto;
+    height: 137px;
+}
+.card-img img{
+    height: inherit; 
+}
+.card-content{
+    padding: 6px 9px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin: 23px 20px; 
+    height: 209px;
+    display: inline-block;
+}
+#missions h2{
+    text-align: center;
+    padding-top: 12px;
+}
+#missions h4{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 24px;
+    font-size: 1rem;
+}
+.footer{
+    height: 60px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    background-color: black;
+}
+/* img{
+    width: 300px;
+    position: relative;
+    top: 400px; 
+}
+.imgg{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red ;
+} */
+.p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 785px) {
+
+    #navbar li a{
+        padding: 6px;
+        margin: 7px;
+        font-size: 11px;
+    }
+  }
+@media screen and (max-width: 590px){
+    #intro div{
+        padding: 0px 34px;
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 1134px){
+    .card-img img {
+        height: 3rem;
+        margin: 0.4rem;
+      }
+    #missions h4{
+        font-size: 0.7rem;
+    }
+    #missions{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 29rem;
+    }
+    .card{
+        flex-direction: row;
+        display: flex;
+        width: 62%;
+        height: 92px;
+    }
+    .sponsers img{
+        margin: 21px 16px;
+        height: 29px;
+        left: 1px;
+    }
+    #sponser{
+        height: 124px;
+    }
+}
